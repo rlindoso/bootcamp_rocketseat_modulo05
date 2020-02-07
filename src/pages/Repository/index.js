@@ -8,7 +8,7 @@ export default class Repository extends Component {
         repository: {},
         issues: [],
         loading: true,
-    }
+    };
 
     async componentDidMount() {
         const { match } = this.props;
@@ -31,8 +31,9 @@ export default class Repository extends Component {
             loading: false,
         });
     }
-    render(){
-        const {repository, issues, loading}
+
+    render() {
+        const { repository, issues, loading } = this.state;
 
         return <h1>Repository</h1>;
     }
